@@ -1,0 +1,22 @@
+<div class="add_notice">
+  <form id="add_notice" enctype="multipart/form-data">
+    <script type="text/javascript" src="../js/add_notice.js"></script>
+    <label>
+      公告名称：<input type="text" name="no_name" id="class">
+    </label>
+    <br>
+    <label>
+      <input type="hidden" name="MAX_FILE_SIZE" value="1000000">
+    </label>
+    <br>
+    <label>
+      封面图片：<input type="file" name="img" id="img">
+    </label>
+    <br>
+    <label>
+      公告详情：<textarea name="no_con" id="intro"></textarea>
+    </label>
+    <br>
+    <button type="button" onclick="add_notice_img();" name="dosubmit" class="do_sub">发表</button>
+  </form>
+</div>

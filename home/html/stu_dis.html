@@ -1,0 +1,40 @@
+<!-- 学生列表 -->
+<div class="list">
+  <script type="text/javascript" src="../js/stu_dis.js"></script>
+  <div class="ser">
+    <form id="ser_form">
+      <b>搜索：<b>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+      按姓名：<input id="namedis" type="text" name="student_name" size=12 value="">&nbsp;&nbsp;
+      按学号：<input id="xhdis" type="text" name="student_xh" value="" size=16>&nbsp;&nbsp;
+      <button id="ser" class="ser_sub" type="button" name="sersubmit">搜索</button>
+    </form>
+  </div>
+    <table border="0" width="980">
+
+      <caption><h3>学生列表</h3></caption>
+
+      <thead>
+        <tr>
+          <th>姓名</th>
+          <th>班级</th>
+          <th>学号</th>
+          <th>职务</th>
+        </tr>
+      </thead>
+
+
+      <tbody id="studisp">
+
+      </tbody>
+
+      <tbody id="stupage">
+      </tbody>
+
+      <tbody id="studispser" style="display: none;"></tbody>
+
+      <tbody id="stupageser" style="display: none;"></tbody>
+
+
+    </table>
+</div>
+<!-- 学生列表 -->

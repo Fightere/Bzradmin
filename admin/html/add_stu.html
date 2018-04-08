@@ -1,0 +1,164 @@
+<div class="stu_con">
+  <form class="add_stu"  method="post" enctype="multipart/form-data">
+    <script type="text/javascript" src="../js/add_stu.js"></script>
+
+
+    <h1>添加学生信息</h1>
+    <label>
+      <span>姓名：</span>
+      <input id="name" type="text"  name="name" placeholder="请输入您的姓名：">
+    </label>
+
+    <label>
+      <span>性别：</span>
+      <select id="sex" name="sex">
+        <option value="男" selected="">男</option>
+        <option value="女" selected="">女</option>
+      </select>
+    </label>
+
+    <label>
+      <span>出生日期：</span>
+      <input id="date" type="text" name="date" onclick="laydate()" placeholder="如：1997-01-01" >
+    </label>
+
+    <label>
+      <span>手机号：</span>
+      <input id="tel" type="text" name="tel" placeholder="请输入您的手机号码" >
+    </label>
+
+    <label>
+      <span>邮箱：</span>
+      <input id="email" type="text" name="email" placeholder="请输入您的邮箱" >
+    </label>
+
+    <label>
+      <span>籍贯：</span>
+      <input id="place" type="text" name="place" placeholder="如：xx省xx市xx县" >
+    </label>
+
+    <label>
+      <span>照片：</span>
+      <input type="hidden" name="MAX_FILE_SIZE" value="1000000">
+      <input id="img" type="file" name="img">
+    </label>
+
+    <label>
+      <span>民族：</span>
+      <input id="nation" type="text" name="nation" placeholder="如：汉族" >
+    </label>
+
+    <label>
+      <span>入学时间：</span>
+      <input id="join_sch" type="text" onclick="laydate()" name="join_sch" placeholder="如：2012-09-12" >
+    </label>
+
+    <label>
+      <span>学院：</span>
+      <input id="school" type="text" name="school" placeholder="如：控制与计算机工程学院" >
+    </label>
+
+    <label>
+      <span>专业：</span>
+      <input id="profess" type="text" name="profess" placeholder="如：计算机科学与技术" >
+    </label>
+
+    <label>
+      <span>班级：</span>
+      <input id="sclass" type="text" name="class_name" placeholder="如：计科1501" >
+    </label>
+
+    <label>
+      <span>学号：</span>
+      <input id="xh" type="text" name="xh" placeholder="如：201509010101" >
+    </label>
+
+    <label>
+      <span>职务：</span>
+      <select id="duty" name="duty">
+        <option value="" selected="selected"></option>
+        <option value="班长" >班长</option>
+        <option value="学习委员" >学习委员</option>
+        <option value="心理委员" >心理委员</option>
+        <option value="体育委员" >体育委员</option>
+        <option value="文艺委员" >文艺委员</option>
+        <option value="生活委员" >生活委员</option>
+        <option value="治保委员" >治保委员</option>
+        <option value="团支部书记" >团支部书记</option>
+        <option value="组织委员" >组织委员</option>
+        <option value="宣传委员" >宣传委员</option>
+      </select>
+    </label>
+
+    <label>
+      <span>一年级学分绩：</span>
+      <input id="score_1" type="text" name="score_1" placeholder="请如实填写" >
+    </label>
+
+    <label>
+      <span>一年级名次：</span>
+      <input id="mc_1" type="text" name="mc_1" placeholder="如：13/81" >
+    </label>
+
+    <label>
+      <span>二年级学分绩：</span>
+      <input id="score_2" type="text" name="score_2" placeholder="请如实填写" >
+    </label>
+
+    <label>
+      <span>二年级名次：</span>
+      <input id="mc_2" type="text" name="mc_2" placeholder="如：13/81" >
+    </label>
+
+    <label>
+      <span>三年级学分绩：</span>
+      <input id="score_3" type="text" name="score_3" placeholder="请如实填写" >
+    </label>
+
+    <label>
+      <span>三年级名次：</span>
+      <input id="mc_3" type="text" name="mc_3" placeholder="如：13/81" >
+    </label>
+
+    <label>
+      <span>四年级学分绩：</span>
+      <input id="score_4" type="text" name="score_4" placeholder="请如实填写" >
+    </label>
+
+    <label>
+      <span>四年级名次：</span>
+      <input id="mc_4" type="text" name="mc_4" placeholder="如：13/81" >
+    </label>
+
+    <label>
+      <span>获奖记录：</span>
+      <textarea id="prize" name="prize"></textarea>
+    </label>
+
+    <label>
+      <span>违纪记录：</span>
+      <textarea id="crtiz" name="crtiz"></textarea>
+    </label>
+
+    <label>
+      <span>老师评价：</span>
+      <textarea id="message" name="message"></textarea>
+    </label>
+
+    <label>
+      <span></span>
+      <button type="button" onclick="add_stu_img();" name="dosubmit" class="do_sub">保存</button>
+    </label>
+  </form>
+</div>
+<script>
+  ;!function(){
+
+  //laydate.skin('molv');
+
+  laydate({
+     elem: '#demo'
+  })
+
+  }();
+</script>

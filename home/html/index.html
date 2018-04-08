@@ -1,0 +1,130 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <title>班主任辅助管理系统</title>
+    <meta charset="utf-8">
+    <link rel="stylesheet" type="text/css" href="../../public/css/index.css">
+    <link rel="stylesheet" type="text/css" href="../css/lunbo.css">
+    <link rel="stylesheet" type="text/css" href="../css/notice.css">
+    <link rel="stylesheet" type="text/css" href="../css/list.css">
+    <link rel="stylesheet" type="text/css" href="../css/msg.css">
+    <link rel="stylesheet" type="text/css" href="../../admin/css/add_stu.css">
+    <link rel="stylesheet" type="text/css" href="../../public/laypage/skin/laypage.css">
+    <script src="../js/jquery-1.11.3.min.js"></script>
+    <script type="text/javascript" src="../../public/laypage/laypage.js"></script>
+    <script type="text/javascript" src="../js/lunbo.js"></script>
+    <script type="text/javascript" src="../js/session.js"></script>
+    <script type="text/javascript" src="../js/newpage.js"></script>
+    <!-- <script type="text/javascript" src="../js/notice.js"></script> -->
+    <!-- <script type="text/javascript" src="../js/stu_dis.js"></script> -->
+    <!-- <script type="text/javascript" src="../js/see_msg.js"></script> -->
+    <!-- <script type="text/javascript" src="../js/adminjx.js"></script> -->
+    <!-- <script type="text/javascript" src="../js/adminwjx.js"></script> -->
+  </head>
+
+  <body>
+    <div class="container">
+      <div class="main">
+        <div class="header">
+
+          <div class="logo">
+            <a class="sya" href="javascript:void(0)" onclick="a(5)"><img src="../../public/image/logo.png"></a>
+          </div>
+
+          <div class="menu">
+            <nav class="nav">
+
+              <ul class="nav_menu">
+
+                <input type="hidden" name="hidden" class="thisclass">
+                <!-- <li id="index" class="nav_menu-item thisclass"  ><a href="javascript:void(0)" onclick="a(5)">首页</a></li> -->
+
+                <li id="notice" class="nav_menu-item"><a href="javascript:void(0)" onclick="a(1)">班级公告</a></li>
+
+                <li id="stu_list" class="nav_menu-item"><a href="javascript:void(0)" onclick="a(2)" >学生信息</a></li>
+
+                <li class="nav_menu-item">
+
+                  <a href="javascript:void(0);">留言板</a>
+
+                  <ul id="lastitem" class="nav_submenu">
+                    <li class="nav_submenu-item"> <a href="javascript:void(0)" onclick="a(3)">我要留言</a> </li>
+                    <li class="nav_submenu-item"> <a href="javascript:void(0)" onclick="a(4)">查看留言</a> </li>
+                    <li class="nav_submenu-item"> <a href="javascript:void(0)" onclick="a(6)">我的精选</a> </li>
+                    <li class="nav_submenu-item"> <a href="javascript:void(0)" onclick="a(7)">留言历史</a> </li>
+                  </ul>
+
+                </li>
+
+              </ul>
+            </nav>
+            <script type="text/javascript">
+              $(".menu nav ul li").click(function(){
+                if(!($(this).hasClass("thisclass"))){
+                  $(this).addClass('thisclass').siblings("li").removeClass('thisclass');
+                }
+              });
+
+              $(".sya").click(function(){
+                $(".menu nav ul li").removeClass('thisclass');
+              });
+            </script>
+          </div>
+
+          <div class="hyc">
+            <form>
+              <input id="session" type="hidden" name="session">
+            </form>
+
+            欢迎你：<b style="color: purple; font-weight: lighter;" id="css"><b id="hyc"></b><a href="../php/logout.php">退出</a></b>
+          </div>
+
+        </div>
+
+        <div class="center">
+
+          <div id="change">
+            <!-- 轮播图 -->
+            <div id="lunbo" style="display: block;">
+              <img src="../image/1.jpg" style="display: block" />
+              <img src="../image/2.jpg"  />
+              <img src="../image/3.jpg"  />
+              <img src="../image/4.jpg"  />
+              <img src="../image/5.jpg"  />
+              <img src="../image/6.jpg"  />
+              <img src="../image/7.jpg"  />
+
+              <ul>
+                <li style="background: #A00000"></li>
+                <li></li>
+                <li></li>
+                <li></li>
+                <li></li>
+                <li></li>
+                <li></li>
+              </ul>
+            </div>
+            <!-- 轮播图 -->
+          </div>
+
+        </div>
+
+        <div class="fg_line"></div>
+
+        <div class="footer">
+          <div class="logo2">
+            <img src="../../public/image/timg1.jpg">
+          </div>
+          <div class="fg_line"></div>
+
+          <div class="lx">
+              <h3>联系我们</h3>
+              <h3>电话：0317-4598317</h3>
+          </div>
+        </div>
+      </div>
+    </div>
+
+  </body>
+
+</html>
